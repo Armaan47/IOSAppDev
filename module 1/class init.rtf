@@ -1,0 +1,162 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Menlo-Italic;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Bold;
+\f3\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red108\green121\blue134;\red31\green31\blue36;\red252\green95\blue163;
+\red255\green255\blue255;\red150\green134\blue245;\red145\green212\blue98;\red122\green200\blue182;\red153\green232\blue213;
+\red252\green106\blue93;}
+{\*\expandedcolortbl;;\csgenericrgb\c42394\c47462\c52518;\csgenericrgb\c12054\c12284\c14131;\csgenericrgb\c98839\c37355\c63833;
+\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c58752\c52717\c95948;\csgenericrgb\c56799\c83212\c38450;\csgenericrgb\c47716\c78607\c71403;\csgenericrgb\c59926\c90967\c83488;
+\csgenericrgb\c98912\c41558\c36568;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab1137
+\pard\tx1137\pardeftab1137\pardirnatural\partightenfactor0
+
+\f0\i\fs46 \cf2 \cb3 //Inheritance concepts
+\f1\i0\fs24 \cf0 \
+\
+
+\f2\b\fs46 \cf4 class
+\f3\b0 \cf5  Animal
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5     
+\f2\b \cf4 var
+\f3\b0 \cf5  noOfLegs = \cf6 0
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5     
+\f2\b \cf4 var
+\f3\b0 \cf5  hasFur = 
+\f2\b \cf4 false
+\f1\b0\fs24 \cf0 \
+
+\f3\fs46 \cf5 \}
+\f1\fs24 \cf0 \
+\
+
+\f2\b\fs46 \cf4 class
+\f3\b0 \cf5  Dog : \cf7 Animal
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5     
+\f2\b \cf4 init
+\f3\b0 \cf5 (leg:\cf8 Int\cf5 ,fur:\cf8 Bool\cf5 ) \{
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5         
+\f2\b \cf4 super
+\f3\b0 \cf5 .\cf7 init\cf5 ()
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5         \cf7 noOfLegs\cf5  = leg
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5         \cf7 hasFur\cf5  = fur
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5     
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f2\b\fs46 \cf4 var
+\f3\b0 \cf5  obj2 =  \cf7 Dog\cf5 (leg:\cf6 4\cf5 ,fur:
+\f2\b \cf4 true
+\f3\b0 \cf5 )
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf9 print\cf5 (\cf10 "The number of legs of this dog are"\cf5 ,\cf7 obj2\cf5 .\cf7 noOfLegs\cf5 )
+\f1\fs24 \cf0 \
+
+\f2\b\fs46 \cf4 class
+\f3\b0 \cf5  Cow : \cf7 Animal
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5     
+\f2\b \cf4 init
+\f3\b0 \cf5 (newLeg:\cf8 Int\cf5 ,newFur:\cf8 Bool\cf5 )
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5     \{
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5         
+\f2\b \cf4 super
+\f3\b0 \cf5 .\cf7 init\cf5 ()
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5         \cf7 noOfLegs\cf5  = newLeg
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5         \cf7 hasFur\cf5  = newFur
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f2\b\fs46 \cf4 var
+\f3\b0 \cf5  obj3 = \cf7 Cow\cf5 (newLeg:\cf6 4\cf5 ,newFur:
+\f2\b \cf4 true
+\f3\b0 \cf5 )
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf9 print\cf5 (\cf10 "The number of legs of this cow are"\cf5 ,\cf7 obj3\cf5 .\cf7 noOfLegs\cf5 )
+\f1\fs24 \cf0 \
+
+\f2\b\fs46 \cf4 class
+\f3\b0 \cf5  Snake : \cf7 Animal
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5     
+\f2\b \cf4 init
+\f3\b0 \cf5 (leg:\cf8 Int\cf5 ,fur:\cf8 Bool\cf5 )
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5     \{
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5         
+\f2\b \cf4 super
+\f3\b0 \cf5 .\cf7 init\cf5 ()
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5         \cf7 noOfLegs\cf5  = leg
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5         \cf7 hasFur\cf5  = fur
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f2\b\fs46 \cf4 var
+\f3\b0 \cf5  obj4 = \cf7 Snake\cf5 (leg:\cf6 0\cf5 ,fur:
+\f2\b \cf4 false
+\f3\b0 \cf5 )
+\f1\fs24 \cf0 \
+
+\f3\fs46 \cf9 print\cf5 (\cf10 "The number of legs of this snake are"\cf5 ,\cf7 obj4\cf5 .\cf7 noOfLegs\cf5 )
+\f1\fs24 \cf0 \
+}

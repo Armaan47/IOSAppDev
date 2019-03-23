@@ -1,0 +1,104 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;\f2\fswiss\fcharset0 Helvetica;
+\f3\fnil\fcharset0 AppleColorEmoji;}
+{\colortbl;\red255\green255\blue255;\red242\green36\blue140;\red31\green31\blue36;\red255\green255\blue255;
+\red92\green223\blue191;\red149\green229\blue92;\red150\green132\blue248;\red252\green70\blue81;}
+{\*\expandedcolortbl;;\csgenericrgb\c94752\c13993\c54713;\csgenericrgb\c12157\c12157\c14118;\csgenericrgb\c100000\c100000\c100000;
+\csgenericrgb\c36153\c87507\c75062;\csgenericrgb\c58273\c89647\c36165;\csgenericrgb\c58725\c51710\c97419;\csgenericrgb\c98755\c27257\c31670;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab1384
+\pard\tx1384\pardeftab1384\pardirnatural\partightenfactor0
+
+\f0\b\fs56 \cf2 \cb3 @IBAction
+\f1\b0 \cf4  
+\f0\b \cf2 func
+\f1\b0 \cf4  calc(
+\f0\b \cf2 _
+\f1\b0 \cf4  sender: \cf5 UIButton\cf4 ) \{
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4         
+\f0\b \cf2 if
+\f1\b0 \cf4  
+\f0\b \cf2 let
+\f1\b0 \cf4  num1 = \cf5 Int\cf4 (\cf6 num1\cf4 .\cf5 text\cf4 !) \{
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4             
+\f0\b \cf2 if
+\f1\b0 \cf4  
+\f0\b \cf2 let
+\f1\b0 \cf4  num2 = \cf5 Int\cf4 (\cf6 num2\cf4 .\cf5 text\cf4 !)\{
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4                 
+\f0\b \cf2 var
+\f1\b0 \cf4  res = \cf7 0
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4                 
+\f0\b \cf2 switch
+\f1\b0 \cf4  (sender.\cf5 titleLabel\cf4 !.\cf5 text\cf4 )\{
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4                 
+\f0\b \cf2 case
+\f1\b0 \cf4  \cf8 "
+\f3 \uc0\u10133 
+\f1 "\cf4 :
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4                     res = num1 + num2
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4                 
+\f0\b \cf2 case
+\f1\b0 \cf4  \cf8 "
+\f3 \uc0\u10134 
+\f1 "\cf4 :
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4                     res = num1 - num2
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4                 
+\f0\b \cf2 case
+\f1\b0 \cf4  \cf8 "
+\f3 \uc0\u10006 \u65039 
+\f1 "\cf4 :
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4                     res = num1 * num2
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4                 
+\f0\b \cf2 case
+\f1\b0 \cf4  \cf8 "
+\f3 \uc0\u10135 
+\f1 "\cf4 :
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4                     res = num1 / num2
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4                 
+\f0\b \cf2 default
+\f1\b0 \cf4 :
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4                     res = \cf7 0
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4                 \}
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4                 \cf6 result\cf4 .\cf5 text\cf4  = \cf5 String\cf4 (res)
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4             \}
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4         \}
+\f2\fs24 \cf0 \
+
+\f1\fs56 \cf4     \}}
