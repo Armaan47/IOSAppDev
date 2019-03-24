@@ -1,4 +1,4 @@
-//
+/
 //  ViewController.swift
 //  userdefaultDemo
 //
@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-
+    
     @IBOutlet weak var mytext: UITextField!
     
     @IBAction func save(_ sender: UIButton)
@@ -28,11 +28,11 @@ class ViewController: UIViewController {
         
         if UserDefaults.standard.object(forKey: "text") != nil
         {
-             mytext.text = (UserDefaults.standard.object(forKey: "text") as! String)
+            mytext.text = (UserDefaults.standard.object(forKey: "text") as! String)
             
         }
     }
-
-
+    
+    
 }
 
