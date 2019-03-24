@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DesignLayoutTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone_Wallpaper_H" translatesAutoresizingMaskIntoConstraints="NO" id="HUC-vR-24L">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                <variation key="heightClass=compact-widthClass=compact" image="imageView:HUC-vR-24L:image"/>
+                                <variation key="heightClass=compact-widthClass=regular" image="iPhone_Wallpaper_V"/>
+                                <variation key="heightClass=regular-widthClass=regular" image="iPhone_Wallpaper_V"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUe-fB-h6G" userLabel="Middle View">
+                                <rect key="frame" x="0.0" y="634.5" width="1024" height="97"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obP-kQ-yb0">
+                                        <rect key="frame" x="463.5" y="0.0" width="97" height="97"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="97" id="WVX-fC-htb"/>
+                                            <constraint firstAttribute="width" constant="97" id="iNw-Gl-I61"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Play_Button"/>
+                                        <connections>
+                                            <action selector="flyBird:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zeG-9L-sQ3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="obP-kQ-yb0" secondAttribute="bottom" id="5HD-Df-r9I"/>
+                                    <constraint firstItem="obP-kQ-yb0" firstAttribute="centerX" secondItem="mUe-fB-h6G" secondAttribute="centerX" id="EJy-j3-9Nz"/>
+                                    <constraint firstItem="obP-kQ-yb0" firstAttribute="centerY" secondItem="mUe-fB-h6G" secondAttribute="centerY" id="Z7e-17-us0"/>
+                                    <constraint firstItem="obP-kQ-yb0" firstAttribute="top" secondItem="mUe-fB-h6G" secondAttribute="top" id="opl-z0-m50"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCj-Ac-59t" userLabel="Top View">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="634.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Humming_Bird" translatesAutoresizingMaskIntoConstraints="NO" id="HCL-3o-Pry">
+                                        <rect key="frame" x="392" y="253.5" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="2ux-t5-lew"/>
+                                            <constraint firstAttribute="width" constant="240" id="qne-OE-BbK"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HCL-3o-Pry" firstAttribute="centerX" secondItem="sCj-Ac-59t" secondAttribute="centerX" id="mvp-yb-JWZ"/>
+                                    <constraint firstItem="HCL-3o-Pry" firstAttribute="centerY" secondItem="sCj-Ac-59t" secondAttribute="centerY" id="vVW-p4-fiU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTp-jK-NEk" userLabel="Buttom View">
+                                <rect key="frame" x="0.0" y="731.5" width="1024" height="634.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kingfisher_Bird" translatesAutoresizingMaskIntoConstraints="NO" id="7hK-nd-8LF">
+                                        <rect key="frame" x="392" y="506.5" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="60z-On-hMT"/>
+                                            <constraint firstAttribute="height" constant="128" id="a89-Qv-S49"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7hK-nd-8LF" firstAttribute="centerX" secondItem="FTp-jK-NEk" secondAttribute="centerX" id="8Qc-ka-F1p"/>
+                                    <constraint firstAttribute="bottom" secondItem="7hK-nd-8LF" secondAttribute="bottom" id="E7S-fK-hHa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mUe-fB-h6G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3mo-g6-Xaa"/>
+                            <constraint firstAttribute="trailing" secondItem="FTp-jK-NEk" secondAttribute="trailing" id="6Zm-2q-2bh"/>
+                            <constraint firstItem="mUe-fB-h6G" firstAttribute="top" secondItem="sCj-Ac-59t" secondAttribute="bottom" id="73a-Yp-B6x"/>
+                            <constraint firstAttribute="bottom" secondItem="FTp-jK-NEk" secondAttribute="bottom" id="CQ0-Ay-oMG"/>
+                            <constraint firstItem="HUC-vR-24L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IJo-ft-2Gv"/>
+                            <constraint firstItem="sCj-Ac-59t" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="K5f-La-zcP"/>
+                            <constraint firstItem="sCj-Ac-59t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UFz-0I-YEd"/>
+                            <constraint firstItem="HUC-vR-24L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VRe-XB-qCz"/>
+                            <constraint firstAttribute="trailing" secondItem="HUC-vR-24L" secondAttribute="trailing" id="Xju-dU-BA5"/>
+                            <constraint firstItem="mUe-fB-h6G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aEt-6v-M8d"/>
+                            <constraint firstAttribute="trailing" secondItem="mUe-fB-h6G" secondAttribute="trailing" id="kkd-5d-vhR"/>
+                            <constraint firstAttribute="trailing" secondItem="sCj-Ac-59t" secondAttribute="trailing" id="moq-Kb-PFD"/>
+                            <constraint firstItem="mUe-fB-h6G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ucp-6s-qTs"/>
+                            <constraint firstAttribute="bottom" secondItem="HUC-vR-24L" secondAttribute="bottom" id="umy-I5-c0M"/>
+                            <constraint firstItem="FTp-jK-NEk" firstAttribute="top" secondItem="mUe-fB-h6G" secondAttribute="bottom" id="vcc-yw-2lS"/>
+                            <constraint firstItem="FTp-jK-NEk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wys-mt-Zda"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="birdImage" destination="HCL-3o-Pry" id="usv-aF-FN2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Humming_Bird" width="1442" height="1422"/>
+        <image name="Kingfisher_Bird" width="500" height="550"/>
+        <image name="Play_Button" width="1024" height="1024"/>
+        <image name="iPhone_Wallpaper_H" width="810" height="1440"/>
+        <image name="iPhone_Wallpaper_V" width="1024" height="568"/>
+        <image name="imageView:HUC-vR-24L:image" width="1024" height="568">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGU1RYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
+ExQZHh8lJiwvOUFFSU1QVSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NW
+TlNSZXBzV05TQ29sb3KAAoAQEiTAAACAA4AKW3sxMDI0LCA1Njh90hUKFhhaTlMub2JqZWN0c6EXgASA
+CdIVChoYohscgAWABoAJEAXTIAohIiMkV05TLmJhc2VbTlMucmVsYXRpdmWAAIAIgAdfEHNmaWxlOi8v
+L0FwcGxpY2F0aW9ucy9YY29kZS5hcHAvQ29udGVudHMvUGx1Z0lucy9JREVJbnRlcmZhY2VCdWlsZGVy
+S2l0LmZyYW1ld29yay9SZXNvdXJjZXMvSUJNaXNzaW5nSW1hZ2VHbHlwaC50aWZm0icoKSpaJGNsYXNz
+bmFtZVgkY2xhc3Nlc1VOU1VSTKIpK1hOU09iamVjdNInKC0uV05TQXJyYXmiLSvVMDEyMwo0NTY3OFdO
+U1doaXRlXE5TQ29tcG9uZW50c1xOU0NvbG9yU3BhY2VfEBJOU0N1c3RvbUNvbG9yU3BhY2VEMCAwAEMw
+IDAQA4ALgA/UOjs8Cj0+P0BUTlNJRFVOU0lDQ1dOU01vZGVsEAmADBAAgA7SQgpDRFdOUy5kYXRhTxER
+aAAAEWhhcHBsAgAAAG1udHJHUkFZWFlaIAfcAAgAFwAPAC4AD2Fjc3BBUFBMAAAAAG5vbmUAAAAAAAAA
+AAAAAAAAAAAAAAD21gABAAAAANMtYXBwbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAABWRlc2MAAADAAAAAeWRzY20AAAE8AAAH6GNwcnQAAAkkAAAAI3d0cHQAAAlIAAAA
+FGtUUkMAAAlcAAAIDGRlc2MAAAAAAAAAH0dlbmVyaWMgR3JheSBHYW1tYSAyLjIgUHJvZmlsZQAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAABtbHVjAAAAAAAAAB8AAAAMc2tTSwAAAC4AAAGEZGFESwAAADgAAAGyY2FF
+UwAAADgAAAHqdmlWTgAAAEAAAAIicHRCUgAAAEoAAAJidWtVQQAAACwAAAKsZnJGVQAAAD4AAALYaHVI
+VQAAADQAAAMWemhUVwAAAB4AAANKbmJOTwAAADoAAANoY3NDWgAAACgAAAOiaGVJTAAAACQAAAPKaXRJ
+VAAAAE4AAAPucm9STwAAACoAAAQ8ZGVERQAAAE4AAARma29LUgAAACIAAAS0c3ZTRQAAADgAAAGyemhD
+TgAAAB4AAATWamFKUAAAACYAAAT0ZWxHUgAAACoAAAUacHRQTwAAAFIAAAVEbmxOTAAAAEAAAAWWZXNF
+UwAAAEwAAAXWdGhUSAAAADIAAAYidHJUUgAAACQAAAZUZmlGSQAAAEYAAAZ4aHJIUgAAAD4AAAa+cGxQ
+TAAAAEoAAAb8cnVSVQAAADoAAAdGZW5VUwAAADwAAAeAYXJFRwAAACwAAAe8AFYBYQBlAG8AYgBlAGMA
+bgDhACAAcwBpAHYA4QAgAGcAYQBtAGEAIAAyACwAMgBHAGUAbgBlAHIAaQBzAGsAIABnAHIA5QAgADIA
+LAAyACAAZwBhAG0AbQBhAHAAcgBvAGYAaQBsAEcAYQBtAG0AYQAgAGQAZQAgAGcAcgBpAHMAbwBzACAA
+ZwBlAG4A6AByAGkAYwBhACAAMgAuADIAQx6lAHUAIABoAOwAbgBoACAATQDgAHUAIAB4AOEAbQAgAEMA
+aAB1AG4AZwAgAEcAYQBtAG0AYQAgADIALgAyAFAAZQByAGYAaQBsACAARwBlAG4A6QByAGkAYwBvACAA
+ZABhACAARwBhAG0AYQAgAGQAZQAgAEMAaQBuAHoAYQBzACAAMgAsADIEFwQwBDMEMAQ7BEwEPQQwACAA
+RwByAGEAeQAtBDMEMAQ8BDAAIAAyAC4AMgBQAHIAbwBmAGkAbAAgAGcA6QBuAOkAcgBpAHEAdQBlACAA
+ZwByAGkAcwAgAGcAYQBtAG0AYQAgADIALAAyAMEAbAB0AGEAbADhAG4AbwBzACAAcwB6APwAcgBrAGUA
+IABnAGEAbQBtAGEAIAAyAC4AMpAadShwcJaOUUlepgAgADIALgAyACCCcl9pY8+P8ABHAGUAbgBlAHIA
+aQBzAGsAIABnAHIA5QAgAGcAYQBtAG0AYQAgADIALAAyAC0AcAByAG8AZgBpAGwATwBiAGUAYwBuAOEA
+IAFhAGUAZADhACAAZwBhAG0AYQAgADIALgAyBdIF0AXeBdQAIAXQBeQF1QXoACAF2wXcBdwF2QAgADIA
+LgAyAFAAcgBvAGYAaQBsAG8AIABnAHIAaQBnAGkAbwAgAGcAZQBuAGUAcgBpAGMAbwAgAGQAZQBsAGwA
+YQAgAGcAYQBtAG0AYQAgADIALAAyAEcAYQBtAGEAIABnAHIAaQAgAGcAZQBuAGUAcgBpAGMBAwAgADIA
+LAAyAEEAbABsAGcAZQBtAGUAaQBuAGUAcwAgAEcAcgBhAHUAcwB0AHUAZgBlAG4ALQBQAHIAbwBmAGkA
+bAAgAEcAYQBtAG0AYQAgADIALAAyx3y8GAAg1ozAyQAgrBC5yAAgADIALgAyACDVBLhc0wzHfGZukBpw
+cF6mfPtlcAAgADIALgAyACBjz4/wZYdO9k4AgiwwsDDsMKQwrDDzMN4AIAAyAC4AMgAgMNcw7TDVMKEw
+pDDrA5MDtQO9A7kDugPMACADkwO6A8EDuQAgA5MDrAO8A7wDsQAgADIALgAyAFAAZQByAGYAaQBsACAA
+ZwBlAG4A6QByAGkAYwBvACAAZABlACAAYwBpAG4AegBlAG4AdABvAHMAIABkAGEAIABHAGEAbQBtAGEA
+IAAyACwAMgBBAGwAZwBlAG0AZQBlAG4AIABnAHIAaQBqAHMAIABnAGEAbQBtAGEAIAAyACwAMgAtAHAA
+cgBvAGYAaQBlAGwAUABlAHIAZgBpAGwAIABnAGUAbgDpAHIAaQBjAG8AIABkAGUAIABnAGEAbQBtAGEA
+IABkAGUAIABnAHIAaQBzAGUAcwAgADIALAAyDiMOMQ4HDioONQ5BDgEOIQ4hDjIOQA4BDiMOIg5MDhcO
+MQ5IDicORA4bACAAMgAuADIARwBlAG4AZQBsACAARwByAGkAIABHAGEAbQBhACAAMgAsADIAWQBsAGUA
+aQBuAGUAbgAgAGgAYQByAG0AYQBhAG4AIABnAGEAbQBtAGEAIAAyACwAMgAgAC0AcAByAG8AZgBpAGkA
+bABpAEcAZQBuAGUAcgBpAQ0AawBpACAARwByAGEAeQAgAEcAYQBtAG0AYQAgADIALgAyACAAcAByAG8A
+ZgBpAGwAVQBuAGkAdwBlAHIAcwBhAGwAbgB5ACAAcAByAG8AZgBpAGwAIABzAHoAYQByAG8BWwBjAGkA
+IABnAGEAbQBtAGEAIAAyACwAMgQeBDEESQQwBE8AIARBBDUEQAQwBE8AIAQzBDAEPAQ8BDAAIAAyACwA
+MgAtBD8EQAQ+BEQEOAQ7BEwARwBlAG4AZQByAGkAYwAgAEcAcgBhAHkAIABHAGEAbQBtAGEAIAAyAC4A
+MgAgAFAAcgBvAGYAaQBsAGUGOgYnBkUGJwAgADIALgAyACAGRAZIBkYAIAYxBkUGJwYvBkoAIAY5BicG
+RXRleHQAAAAAQ29weXJpZ2h0IEFwcGxlIEluYy4sIDIwMTIAAFhZWiAAAAAAAADzUQABAAAAARbMY3Vy
+dgAAAAAAAAQAAAAABQAKAA8AFAAZAB4AIwAoAC0AMgA3ADsAQABFAEoATwBUAFkAXgBjAGgAbQByAHcA
+fACBAIYAiwCQAJUAmgCfAKQAqQCuALIAtwC8AMEAxgDLANAA1QDbAOAA5QDrAPAA9gD7AQEBBwENARMB
+GQEfASUBKwEyATgBPgFFAUwBUgFZAWABZwFuAXUBfAGDAYsBkgGaAaEBqQGxAbkBwQHJAdEB2QHhAekB
+8gH6AgMCDAIUAh0CJgIvAjgCQQJLAlQCXQJnAnECegKEAo4CmAKiAqwCtgLBAssC1QLgAusC9QMAAwsD
+FgMhAy0DOANDA08DWgNmA3IDfgOKA5YDogOuA7oDxwPTA+AD7AP5BAYEEwQgBC0EOwRIBFUEYwRxBH4E
+jASaBKgEtgTEBNME4QTwBP4FDQUcBSsFOgVJBVgFZwV3BYYFlgWmBbUFxQXVBeUF9gYGBhYGJwY3BkgG
+WQZqBnsGjAadBq8GwAbRBuMG9QcHBxkHKwc9B08HYQd0B4YHmQesB78H0gflB/gICwgfCDIIRghaCG4I
+ggiWCKoIvgjSCOcI+wkQCSUJOglPCWQJeQmPCaQJugnPCeUJ+woRCicKPQpUCmoKgQqYCq4KxQrcCvML
+CwsiCzkLUQtpC4ALmAuwC8gL4Qv5DBIMKgxDDFwMdQyODKcMwAzZDPMNDQ0mDUANWg10DY4NqQ3DDd4N
++A4TDi4OSQ5kDn8Omw62DtIO7g8JDyUPQQ9eD3oPlg+zD88P7BAJECYQQxBhEH4QmxC5ENcQ9RETETER
+TxFtEYwRqhHJEegSBxImEkUSZBKEEqMSwxLjEwMTIxNDE2MTgxOkE8UT5RQGFCcUSRRqFIsUrRTOFPAV
+EhU0FVYVeBWbFb0V4BYDFiYWSRZsFo8WshbWFvoXHRdBF2UXiReuF9IX9xgbGEAYZRiKGK8Y1Rj6GSAZ
+RRlrGZEZtxndGgQaKhpRGncanhrFGuwbFBs7G2MbihuyG9ocAhwqHFIcexyjHMwc9R0eHUcdcB2ZHcMd
+7B4WHkAeah6UHr4e6R8THz4faR+UH78f6iAVIEEgbCCYIMQg8CEcIUghdSGhIc4h+yInIlUigiKvIt0j
+CiM4I2YjlCPCI/AkHyRNJHwkqyTaJQklOCVoJZclxyX3JicmVyaHJrcm6CcYJ0kneierJ9woDSg/KHEo
+oijUKQYpOClrKZ0p0CoCKjUqaCqbKs8rAis2K2krnSvRLAUsOSxuLKIs1y0MLUEtdi2rLeEuFi5MLoIu
+ty7uLyQvWi+RL8cv/jA1MGwwpDDbMRIxSjGCMbox8jIqMmMymzLUMw0zRjN/M7gz8TQrNGU0njTYNRM1
+TTWHNcI1/TY3NnI2rjbpNyQ3YDecN9c4FDhQOIw4yDkFOUI5fzm8Ofk6Njp0OrI67zstO2s7qjvoPCc8
+ZTykPOM9Ij1hPaE94D4gPmA+oD7gPyE/YT+iP+JAI0BkQKZA50EpQWpBrEHuQjBCckK1QvdDOkN9Q8BE
+A0RHRIpEzkUSRVVFmkXeRiJGZ0arRvBHNUd7R8BIBUhLSJFI10kdSWNJqUnwSjdKfUrESwxLU0uaS+JM
+KkxyTLpNAk1KTZNN3E4lTm5Ot08AT0lPk0/dUCdQcVC7UQZRUFGbUeZSMVJ8UsdTE1NfU6pT9lRCVI9U
+21UoVXVVwlYPVlxWqVb3V0RXklfgWC9YfVjLWRpZaVm4WgdaVlqmWvVbRVuVW+VcNVyGXNZdJ114Xcle
+Gl5sXr1fD19hX7NgBWBXYKpg/GFPYaJh9WJJYpxi8GNDY5dj62RAZJRk6WU9ZZJl52Y9ZpJm6Gc9Z5Nn
+6Wg/aJZo7GlDaZpp8WpIap9q92tPa6dr/2xXbK9tCG1gbbluEm5rbsRvHm94b9FwK3CGcOBxOnGVcfBy
+S3KmcwFzXXO4dBR0cHTMdSh1hXXhdj52m3b4d1Z3s3gReG54zHkqeYl553pGeqV7BHtje8J8IXyBfOF9
+QX2hfgF+Yn7CfyN/hH/lgEeAqIEKgWuBzYIwgpKC9INXg7qEHYSAhOOFR4Wrhg6GcobXhzuHn4gEiGmI
+zokziZmJ/opkisqLMIuWi/yMY4zKjTGNmI3/jmaOzo82j56QBpBukNaRP5GokhGSepLjk02TtpQglIqU
+9JVflcmWNJaflwqXdZfgmEyYuJkkmZCZ/JpomtWbQpuvnByciZz3nWSd0p5Anq6fHZ+Ln/qgaaDYoUeh
+tqImopajBqN2o+akVqTHpTilqaYapoum/adup+CoUqjEqTepqaocqo+rAqt1q+msXKzQrUStuK4trqGv
+Fq+LsACwdbDqsWCx1rJLssKzOLOutCW0nLUTtYq2AbZ5tvC3aLfguFm40blKucK6O7q1uy67p7whvJu9
+Fb2Pvgq+hL7/v3q/9cBwwOzBZ8Hjwl/C28NYw9TEUcTOxUvFyMZGxsPHQce/yD3IvMk6ybnKOMq3yzbL
+tsw1zLXNNc21zjbOts83z7jQOdC60TzRvtI/0sHTRNPG1EnUy9VO1dHWVdbY11zX4Nhk2OjZbNnx2nba
++9uA3AXcit0Q3ZbeHN6i3ynfr+A24L3hROHM4lPi2+Nj4+vkc+T85YTmDeaW5x/nqegy6LzpRunQ6lvq
+5etw6/vshu0R7ZzuKO6070DvzPBY8OXxcvH/8ozzGfOn9DT0wvVQ9d72bfb794r4Gfio+Tj5x/pX+uf7
+d/wH/Jj9Kf26/kv+3P9t//+ADdInKEZHXU5TTXV0YWJsZURhdGGjRkgrVk5TRGF0YdInKEpLXE5TQ29s
+b3JTcGFjZaJMK1xOU0NvbG9yU3BhY2XSJyhOT1dOU0NvbG9yok4r0icoUVJXTlNJbWFnZaJRK18QD05T
+S2V5ZWRBcmNoaXZlctFVVlRyb290gAEACAARABoAIwAtADIANwBLAFEAXABjAGoAdwB+AIYAiACKAI8A
+kQCTAJ8ApACvALEAswC1ALoAvQC/AMEAwwDFAMwA1ADgAOIA5ADmAVwBYQFsAXUBewF+AYcBjAGUAZcB
+ogGqAbcBxAHZAd4B4gHkAeYB6AHxAfYB/AIEAgYCCAIKAgwCEQIZE4UThxOME5oTnhOlE6oTtxO6E8cT
+zBPUE9cT3BPkE+cT+RP8FAEAAAAAAAACAQAAAAAAAABXAAAAAAAAAAAAAAAAAAAUAw
+</mutableData>
+        </image>
+    </resources>
+</document>
